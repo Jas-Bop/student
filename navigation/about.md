@@ -98,17 +98,13 @@ Flags are made using Wikipedia images
 
 ### Journey through Life
 
-Here is what I did at those places
+My life so far:
 
-- 🏫 Lots of Elementary Schools in Tucson, LA, Honolulu, and Glendale (CA)
-- 🏫 Middle and High School in Glendale (CA), Hoover High graduated '77
-- 🎓 Glendale CA Community College, UCLA Extension, LA Wilshire Computer Tech School '77 to '79
-- ⛪ England, London Missionary for Church of Jesus Christ of Latter-day Saints '79 to '81
-- 💼 Culver City, Glendale CA founder at Ashton-Tate, original PC's dBase 2 and 3 '82 to '87
-- 🎓 Eugene Oregon Undergraduate CompSci Degree at University of Oregon (Go Ducks!) '89 to '91
-- 💼 Eugene Oregon, founder and owner @ Microniche `88, Point Control CAD CAM developer '91 to '96
-- 🏢 San Diego CA Qualcomm, Satellite Comm and 1st Mobile OS (BREW) '96 to '19
-- 👨‍🏫 San Diego CA Teacher of Computer Science @ Del Norte High School San Diego '19 to present
+- 🏫 Went to Morning Creek elementry school from K-2.
+- 🚙 Moved to 4s ranch and went to Stone Ranch elementry school from 3-5.
+- 🎓 Graduated from Stone Ranch elementry school and went to Oak Valley middle school.
+- 🏫 Spent 6th, 7th, and 8th grade all at Oak Valley Middle school.
+- 🎓 Graduated from Oak Valley middle school and went to Del Norte high school. 
 
 ### Culture, Family, and Fun
 
