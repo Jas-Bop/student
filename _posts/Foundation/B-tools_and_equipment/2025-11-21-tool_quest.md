@@ -8,7 +8,7 @@ permalink: /tools/journey
 
 ## Visual Journey
 
-Linux is the most compatible OS for Developers.  
+   I use an Macbook air   
 
 ![Tux the Linux Mascot]({{site.baseurl}}/images/tux.png)
 
