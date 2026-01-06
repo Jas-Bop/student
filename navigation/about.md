@@ -119,5 +119,5 @@ My life so far:
 
 <div class="image-gallery">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Video_game_controller.jpg" alt="Video Games">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Polistil_Video_Games_V.G.2_%281%29.jpg" alt="Video Games">
 </div>
