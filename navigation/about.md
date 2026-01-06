@@ -113,3 +113,11 @@ My life so far:
 <div class="image-gallery">
   <img src="{{site.baseurl}}/images/about/IMG_2832.jpg" alt="Image 1">
 </div>
+
+
+### Things I like:
+
+<div class="image-gallery">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Video_game_controller.jpg" alt="Video Games">
+</div>
