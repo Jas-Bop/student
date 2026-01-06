@@ -13,85 +13,99 @@ Flags are made using Wikipedia images
 </comment>
 
 <style>
-    /* Style looks pretty compact, 
-       - grid-container and grid-item are referenced the code 
-    */
+    /* ===== Flag Grid ===== */
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 10px;
     }
+
     .grid-item {
         text-align: center;
     }
+
     .grid-item img {
         width: 100%;
-        height: 100px; /* Fixed height for uniformity */
-        object-fit: contain; /* Ensure the image fits within the fixed height */
-    }
-    .grid-item p {
-        margin: 5px 0; /* Add some margin for spacing */
+        height: 100px;
+        object-fit: contain;
     }
 
+    .grid-item p {
+        margin: 5px 0;
+    }
+
+    /* ===== Horizontal Image Gallery ===== */
     .image-gallery {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 10px;
-        }
+    }
 
     .image-gallery img {
         max-height: 150px;
         object-fit: cover;
         border-radius: 5px;
     }
+
+    /* ===== Likes Grid (NEW) ===== */
+    .likes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .likes-item {
+        text-align: center;
+    }
+
+    .likes-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .likes-item p {
+        margin-top: 6px;
+        font-size: 0.9rem;
+        color: #444;
+    }
 </style>
 
-<!-- This grid_container class is used by CSS styling and the id is used by JavaScript connection -->
-<div class="grid-container" id="grid_container">
-    <!-- content will be added here by JavaScript -->
-</div>
+<!-- ===== Flags Grid ===== -->
+<div class="grid-container" id="grid_container"></div>
 
 <script>
-    // 1. Make a connection to the HTML container defined in the HTML div
-    var container = document.getElementById("grid_container"); // This container connects to the HTML div
+    var container = document.getElementById("grid_container");
 
-    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "4/41/Flag_of_India.svg", "greeting": "Hey", "description": "India - 5 times"},
         {"flag": "d/d9/Flag_of_Canada_%28Pantone%29.svg", "greeting": "Hi", "description": "Canada - 5 times"},
         {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 times"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 4 times"},
+        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 4 times"}
     ];
 
-    // 3a. Consider how to update style count for size of container
-    // The grid-template-columns has been defined as dynamic with auto-fill and minmax
-
-    // 3b. Build grid items inside of our container for each row of data
     for (const location of living_in_the_world) {
-        // Create a "div" with "class grid-item" for each row
         var gridItem = document.createElement("div");
-        gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
-        // Add "img" HTML tag for the flag
+        gridItem.className = "grid-item";
+
         var img = document.createElement("img");
-        img.src = http_source + location.flag; // concatenate the source and flag
-        img.alt = location.flag + " Flag"; // add alt text for accessibility
+        img.src = http_source + location.flag;
+        img.alt = location.description + " Flag";
 
-        // Add "p" HTML tag for the description
         var description = document.createElement("p");
-        description.textContent = location.description; // extract the description
+        description.textContent = location.description;
 
-        // Add "p" HTML tag for the greeting
         var greeting = document.createElement("p");
-        greeting.textContent = location.greeting;  // extract the greeting
+        greeting.textContent = location.greeting;
 
-        // Append img and p HTML tags to the grid item DIV
         gridItem.appendChild(img);
         gridItem.appendChild(description);
         gridItem.appendChild(greeting);
 
-        // Append the grid item DIV to the container DIV
         container.appendChild(gridItem);
     }
 </script>
@@ -100,24 +114,35 @@ Flags are made using Wikipedia images
 
 My life so far:
 
-- 🏫 Went to Morning Creek elementry school from K-2.
-- 🚙 Moved to 4s ranch and went to Stone Ranch elementry school from 3-5.
-- 🎓 Graduated from Stone Ranch elementry school and went to Oak Valley middle school.
-- 🏫 Spent 6th, 7th, and 8th grade all at Oak Valley Middle school.
-- 🎓 Graduated from Oak Valley middle school and went to Del Norte high school. 
+- 🏫 Went to Morning Creek elementary school from K–2  
+- 🚙 Moved to 4S Ranch and went to Stone Ranch elementary school from 3–5  
+- 🎓 Graduated from Stone Ranch elementary school and went to Oak Valley middle school  
+- 🏫 Spent 6th, 7th, and 8th grade at Oak Valley Middle School  
+- 🎓 Graduated from Oak Valley middle school and went to Del Norte High School  
 
 ### Culture, Family, and Fun
-- There are 4 people in my family. We are all from india but me and my brother were born here.
-
+- There are 4 people in my family. We are all from India, but my brother and I were born here.
 
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/IMG_2832.jpg" alt="Image 1">
+    <img src="{{site.baseurl}}/images/about/IMG_2832.jpg" alt="Family photo">
 </div>
-
 
 ### Things I like:
 
-<div class="image-gallery">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Polistil_Video_Games_V.G.2_%281%29.jpg" alt="Video Games">
+<!-- ===== Likes Grid with Captions ===== -->
+<div class="likes-grid">
+    <div class="likes-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
+        <p>Sushi</p>
+    </div>
+
+    <div class="likes-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Polistil_Video_Games_V.G.2_%281%29.jpg" alt="Video Games">
+        <p>Video Games</p>
+    </div>
+
+    <div class="likes-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_Racket_and_Balls.jpg" alt="Tennis">
+        <p>Tennis</p>
+    </div>
 </div>
