@@ -13,7 +13,6 @@ Flags are made using Wikipedia images
 </comment>
 
 <style>
-    /* ===== Flag Grid ===== */
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -34,7 +33,6 @@ Flags are made using Wikipedia images
         margin: 5px 0;
     }
 
-    /* ===== Horizontal Image Gallery ===== */
     .image-gallery {
         display: flex;
         flex-wrap: nowrap;
@@ -48,7 +46,6 @@ Flags are made using Wikipedia images
         border-radius: 5px;
     }
 
-    /* ===== Likes Grid (NEW) ===== */
     .likes-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -74,7 +71,6 @@ Flags are made using Wikipedia images
     }
 </style>
 
-<!-- ===== Flags Grid ===== -->
 <div class="grid-container" id="grid_container"></div>
 
 <script>
@@ -129,7 +125,6 @@ My life so far:
 
 ### Things I like:
 
-<!-- ===== Likes Grid with Captions ===== -->
 <div class="likes-grid">
     <div class="likes-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
