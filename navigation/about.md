@@ -29,8 +29,10 @@ Flags are made using Wikipedia images
         object-fit: contain;
     }
 
+    /* Caption color changed to black */
     .grid-item p {
         margin: 5px 0;
+        color: #000;
     }
 
     .image-gallery {
@@ -46,11 +48,17 @@ Flags are made using Wikipedia images
         border-radius: 5px;
     }
 
+    /* Likes grid */
     .likes-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 15px;
         margin-top: 10px;
+
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        padding: 15px;
+        background-color: #fafafa;
     }
 
     .likes-item {
@@ -64,10 +72,11 @@ Flags are made using Wikipedia images
         border-radius: 8px;
     }
 
+    /* Caption color changed to black */
     .likes-item p {
         margin-top: 6px;
         font-size: 0.9rem;
-        color: #444;
+        color: #000;
     }
 </style>
 
@@ -106,6 +115,11 @@ Flags are made using Wikipedia images
     }
 </script>
 
+.likes-grid .likes-item p {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
 ### Journey through Life
 
 My life so far:
@@ -124,20 +138,27 @@ My life so far:
 </div>
 
 ### Things I like:
-
 <div class="likes-grid">
     <div class="likes-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi">
-        <p>Sushi</p>
+        <p style="color:#000 !important; opacity:1 !important;">Sushi</p>
     </div>
 
     <div class="likes-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Polistil_Video_Games_V.G.2_%281%29.jpg" alt="Video Games">
-        <p>Video Games</p>
+        <p style="color:#000 !important; opacity:1 !important;">Video Games</p>
     </div>
 
     <div class="likes-item">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_Racket_and_Balls.jpg" alt="Tennis">
-        <p>Tennis</p>
+        <p style="color:#000 !important; opacity:1 !important;">Tennis</p>
+    </div>
+
+    <div class="likes-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/RedDot_Burger.jpg" alt="Burger">
+        <p style="color:#000 !important; opacity:1 !important;">Burgers</p>
     </div>
 </div>
+
+
+
